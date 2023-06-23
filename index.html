@@ -4,38 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 
 <body>
     <header>
-        <pre>
-            <span><p><big><h1>Welcome to my Portfolio</h1></span></big><a href="index.html"><big>Home</big></a>    <a href="education.html">Education</a>    <a href="experience.html">Experience</a>    <a href="skills.html">Skills</a></p><hr>
-            </pre>
+        <div id="navbar">
+            <a id="portfolio">My Portfolio</a>
+            <a id="edu" href="education.html">Education</a>
+            <a id="exp" href="experience.html">Experience</a>
+            <a id="skill" href="skills.html">Skills</a>
+        </div>
     </header>
 
     <main>
-        <img src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="A studnet on his laptop" height="400" width="725">
-        <br><br>
-        <big>
-            <article> My name is Kabir Uddin and I am a student. I have a passion for programming and content writing.
-                <br><br>
-                You can see all the information you may require about me by clicking on the links above
-            </article>
-        </big>
         <br>
+        <div id="container">
+            <img src="./Images/boy-coding.jpg" alt="coding picture" id="coding">
+            <div id="text">
+                <h2>Hi there! </h2>
+                <p>My name is Kabir and I am a student. I have a passion for programming and content writing.</p>
+            </div>
+        </div>
+        <br>
+        <div id="github">
+            <p>Fork me on <a href="https://github.com/thegr8kabeer" target="_main">Github</a></p> 
+        </div>
+
+        <!-- <big>
+            <b>Did you follow me on: </b>
+        </big> <br>
+        <pre><label for="social_1"> <input type="checkbox" value="Followed" name="Check_Socials" id="social_1"><big><b>Instagram</b> <a href="https://www.instagram.com/kabeer.yosaf/" target="_blank">@kabir.yosaf</a></big></label>
+        </pre>
+        <pre><label for="social_2"> <input type="checkbox" value="Followed" name="Check_Socials" id="social_2"><big><b>Twitter</b> <a href="https://twitter.com/thegr8kabeer" target="_blank">@thegr8kabeer</a></big></label>
+        </pre>
+    </main>
+
+    <footer>
+        <form action="/gigachad-hub.github.io-main/msg_saved.html">
+            <big>Send me a message: </big>
+            <input type="text" placeholder="message">
+        </form>
+
+        <pre><p><hr><big><h3>Contact Information</h3></big><img src="https://cdn-icons-png.flaticon.com/128/646/646094.png" alt="Mail Icon" height="16" width="15"><big>  chkabeer20@gmail.com</big>       <img src="https://cdn-icons-png.flaticon.com/128/126/126509.png" alt="Mobile Icon" height="17" width="17"><big>  +92 333 444 0876</big>      <img src="https://cdn-icons-png.flaticon.com/128/2838/2838912.png" alt="Location icon" height="17" width="17"><big> Lahore, Pakistan</big>
+        </pre>
+        <hr>
         <big>
             <pre><big>Check out my projects on </big><a href="https://github.com/thegr8kabeer" target="_main"><big>Github</big></a>
                 </pre>
         </big>
-    </main>
-
-    <footer>
-        <pre><p><hr><big><h3>Contact Information</h3></big><img src="https://cdn-icons-png.flaticon.com/128/646/646094.png" alt="Mail Icon" height="16" width="15"><big>  chkabeer20@gmail.com</big>       <img src="https://cdn-icons-png.flaticon.com/128/126/126509.png" alt="Mobile Icon" height="17" width="17"><big>  +92 333 444 0876</big>      <img src="https://cdn-icons-png.flaticon.com/128/2838/2838912.png" alt="Location icon" height="17" width="17"><big> Lahore, Pakistan</big>
-    
-            </pre>
-    </footer>
+        <form action="action.php">
+            <big>Did you like my portfolio? </big>
+            <label for="1">
+                <input type="radio" value="Approval" name="Opinion" id="1"><big>Yes</big>
+            </label>
+            <label for="2">
+                <input type="radio" value="Denial" name="Opinion" id="2"><big>No</big>
+            </label>
+        </form>
+    </footer> -->
 </body>
 
 </html>
