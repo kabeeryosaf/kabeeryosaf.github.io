@@ -6,21 +6,8 @@ body {
   background-color: #212121;
   color: white;
 }
-#navbar {
-  background-color: #323232;
-  height: 60px;
-  padding: 20px;
-  color: white;
-}
-#portfolio {
-  color: #14ffec;
-  margin-left: 20px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 35px;
-}
 a {
-  margin-right: 185px;
+  margin-right: 120px;
   font-size: 25px;
   text-decoration: none;
   color: white;
@@ -30,11 +17,27 @@ a {
 a:hover {
   color: #14ffec;
 }
-#container {
-  margin: 100px auto;
-  width: 75%;
+#edu{
+  margin-left: 270px;
 }
-#about {
+
+/* Navbar */
+#navbar {
+  background-color: #323232;
+  max-height: 500px;
+  padding: 20px 0px 20px 20px;
+  color: white;
+}
+#portfolio {
+  color: #14ffec;
+  margin-left: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+/* Div to show the floating image along with the text (Hi there) */
+#container {
   margin: 100px auto;
   width: 75%;
 }
@@ -57,6 +60,14 @@ a:hover {
   float: right;
   margin-left: 50px;
 }
+#programming:hover{
+  color:#14ffec;
+}
+#content:hover{
+  color:#14ffec;
+}
+
+/* Div to show the box around the fork me on github */
 #github{
     margin: 50px auto;
     width: 50%;
@@ -64,7 +75,7 @@ a:hover {
     border: 2px solid #14ffec;
 }
 #github p{
-    padding-left: 170px;
+    padding-left: 140px;
     text-align: center;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
@@ -74,4 +85,43 @@ a:hover {
 #github a{
     font-size: 30px;
     font-weight: 200;
+}
+
+/* Bottom Nav Bar */
+
+#bottom-nav{
+  max-height: 500px;
+  padding: 40px;
+  background-color: black;
+}
+#bottom-nav p{
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 10px;
+  margin-left: 180px;
+  font-weight: 300;
+}
+#insta{
+  font-weight: 200;
+  font-size: 30px;
+}
+.insta-pic{
+  height: 23px;
+  margin-right: 15px;
+  margin-left: 150px;
+}
+#twitter{
+  font-weight: 200;
+  font-size: 30px;
+}
+.twitter-pic{
+  height: 25px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+.copyright{
+  font-size: 20px;
+  color: #787474;
+  padding-top: 20px;
+  margin-left: 500px;
 }
