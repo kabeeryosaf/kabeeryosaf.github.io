@@ -48,12 +48,14 @@
     font-weight: 100;
     font-size: 24px;
     color: #bfb9b9;
+    text-align: center;
   }
   #desc h2{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 39px;
     padding: 10px 120px 40px 160px;
+    text-align: center;
   }
   #quote:hover{
     color: #14ffec;
