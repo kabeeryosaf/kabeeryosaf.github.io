@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color: #212121;
+    color: white;
+  }
+  a {
+    margin-right: 120px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+  }
+  a:hover {
+    color: #14ffec;
+  }
+  
+  /* Navbar */
+
+  #navbar {
+    background-color: #323232;
+    max-height: 500px;
+    padding: 20px 0px 20px 20px;
+    color: white;
+  }
+  #portfolio {
+    color: #14ffec;
+    margin-left: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+  }
+  #home {
+    margin-left: 300px;
+  }
+
+  /* Body */
+
+  #container{
+    margin: 50px 250px 50px 230px;
+    font-family: 'Poppins', sans-serif;
+  }
+  #quote{
+    font-style: italic;
+    font-weight: 100;
+    font-size: 24px;
+    color: #bfb9b9;
+  }
+  #desc h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 39px;
+    padding: 10px 120px 40px 160px;
+  }
+  #quote:hover{
+    color: #14ffec;
+  }
+
+  #desc p{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    padding: 6px 300px 6px 300px
+  }
+  #s1:hover{
+    color: #14ffec;
+  }
+  #s2:hover{
+    color: #14ffec;
+  }
+  #s3:hover{
+    color: #14ffec;
+  }
+  #s4:hover{
+    color: #14ffec;
+  }
+  #s5:hover{
+    color: #14ffec;
+  }
+
+  /* Bottom Nav Bar */
+
+  #bottom-nav{
+    max-height: 500px;
+    max-width: 100%;
+    padding: 40px;
+    background-color: black;
+  }
+  #bottom-nav p{
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 10px;
+    margin-left: 180px;
+    font-weight: 300;
+  }
+  #insta{
+    font-weight: 200;
+    font-size: 30px;
+  }
+  .insta-pic{
+    height: 23px;
+    margin-right: 15px;
+    margin-left: 150px;
+  }
+  #twitter{
+    font-weight: 200;
+    font-size: 30px;
+  }
+  .twitter-pic{
+    height: 25px;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  .copyright{
+    font-size: 20px;
+    color: #787474;
+    padding-top: 20px;
+    margin-left: 500px;
+  }
