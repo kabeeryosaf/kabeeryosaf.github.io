@@ -9,27 +9,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"></ln>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script defer src="app.js"></script>
 </head>
 
 <body>
     <header class="header">
         <a href="#" class="logo">Kabir.</a>
 
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="">Portfolio</a>
-            <a href="">Contact</a>
+        <nav class="navbar" id="activeNavBar">
+            <a href="#page-1" class="link active">Home</a>
+            <a href="#page-2" class="link">Education</a>
+            <a href="#page-3" class="link">Experience</a>
+            <a href="#page-4" class="link">Skills</a>
         </nav>
     </header>
 
-    <section class="home">
+    <section class="home" id="page-1">
+
         <div class="home-content">
             <h1>Hi, I'm Kabir Yousaf</h1>
             <h3>Frontend Developer</h3>
-            <p>I am passionate about creating engaging web experiences. Studying <b >data science</b> to enhance projects with data-driven insights. Skilled in HTML, CSS, JavaScript, and <b>responsive design</b> principles.</p>
+            <p>I am passionate about creating engaging web experiences. Studying <b>data science</b> to enhance projects
+                with data-driven insights. Skilled in HTML, CSS, JavaScript, and <b>responsive design</b> principles.
+            </p>
             <div class="btn-box">
                 <a href="#">Show Resume</a>
             </div>
@@ -40,8 +43,58 @@
             <a href="#"><i class='bx bxl-twitter'></i></a>
             <a href="#"><i class='bx bxl-linkedin'></i></a>
         </div>
-    </section>        
-    </span>
+    </section>
+
+    <section class="home2" id="page-2">
+        <div class="home-content" id="page2-margin">
+            <h1>Bachelors Degree</h1>
+            <h3>Data Science</h3>
+            <p>I am doing this degree from <b>National University Of Computer and Emerging Sciences</b>. This would help
+                me develop the skills in data handling and data scraping and could aid in using data science in web
+                development. I started this degree in 2022 and will end in 2026.
+            </p>
+        </div>
+    </section>
+
+    <section class="home3" id="page-3">
+        <div class="home-content">
+            <h1>My Experience</h1>
+            <h3>Frontend Developer</h3>
+            <p>Internship at a local software house. <b>Designed a website</b> and made a <b>POS Terminal</b> for a
+                client.
+            </p>
+            <h3>Content Writing</h3>
+            <p>More than 2 years of experience. <b>Chief Editor</b> of the university magazine and written more than
+                <b>30+ articles</b> on various niches.
+            </p>
+        </div>
+    </section>
+
+    <section class="home4" id="page-4">
+        <div class="home-content">
+            <h1>My Skills</h1>
+            <h3>Frontend Developer</h3>
+            <p>I am passionate about creating engaging web experiences. Studying <b>data science</b> to enhance projects
+                with data-driven insights. Skilled in HTML, CSS, JavaScript, and <b>responsive design</b> principles.
+            </p>
+            <div class="btn-box-top">
+                <a href="#">Go to top</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var header = document.getElementById("activeNavBar");
+        var links = header.getElementsByClassName("link");
+        for (var i = 0; i < links.length; i++) {
+            links[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace("active", "");
+                this.className += "active";
+            })
+        }
+    </script>
+
 </body>
 
 </html>
