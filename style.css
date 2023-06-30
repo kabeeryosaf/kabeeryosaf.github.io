@@ -6,17 +6,21 @@
 }
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 body {
   color: #ededed;
-  /* overflow-y: hidden; */
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   background: #ededed;
   width: 0;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: #14ffec;
+}
+section {
+  scroll-snap-align: start;
+  height: 100vh;
 }
 header {
   position: fixed;
@@ -30,11 +34,31 @@ header {
   align-items: center;
   z-index: 100;
 }
+
 header a:is(:link, :active, :visited).active {
   color: #14ffec;
   background-color: transparent;
 }
-
+a::selection{
+  background-color: #14ffec;
+  color: black;
+}
+p::selection{
+  background-color: #14ffec;
+  color: black;
+}
+h1::selection{
+  background-color: #14ffec;
+  color: black;
+}
+h3::selection{
+  background-color: #14ffec;
+  color: black;
+}
+b::selection{
+  background-color: #14ffec;
+  color: black;
+}
 .logo {
   font-size: 25px;
   color: #ededed;
@@ -319,7 +343,7 @@ header a:is(:link, :active, :visited).active {
   background-size: cover;
 }
 
-.home4 .home-content h3{
+.home4 .home-content h3 {
   font-size: 24px;
   margin-top: 10px;
 }
@@ -396,7 +420,7 @@ header a:is(:link, :active, :visited).active {
   left: 50%;
 
   background-color: rgb(30, 30, 30);
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -424,19 +448,37 @@ header a:is(:link, :active, :visited).active {
   }
 }
 @keyframes loader {
-  0% { transform: rotate(0deg);}
-  25% { transform: rotate(180deg);}
-  50% { transform: rotate(180deg);}
-  75% { transform: rotate(360deg);}
-  100% { transform: rotate(360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes loader-inner {
-  0% { height: 0%;}
-  25% { height: 0%;}
-  50% { height: 100%;}
-  75% { height: 100%;}
-  100% { height: 0%;}
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
 }
-
-
