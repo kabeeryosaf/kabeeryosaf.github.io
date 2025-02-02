@@ -3,18 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "npm run dev:prepare && next dev",
+    "dev:prepare": "npm install --legacy-peer-deps",
+    "build": "npm install --legacy-peer-deps && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
-    "framer-motion": "^11.3.21",
+    "framer-motion": "11.3.21",
     "next": "^15.1.6",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "tailwind-merge": "^2.4.0"
+  },
+  "resolutions": {
+    "react": "18.3.1",
+    "framer-motion": "11.3.21"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -26,5 +31,6 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  }
+  },
+  "VERCEL_NPM_FLAGS": "--legacy-peer-deps"
 }
